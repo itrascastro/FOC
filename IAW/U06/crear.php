@@ -9,13 +9,13 @@ $sql = "CREATE TABLE IF NOT EXISTS productos2 (
     precio int(10) UNSIGNED NOT NULL
   )";
 
-if ($conn->query($sql) === TRUE) {
+if (mysqli_query($conn, $sql) === TRUE) {
     $mensaje = "Tabla 'productos' creada correctamente";
 } else {
     $mensaje = "Error al crear la tabla: " . $conn->error;
 }
 
-$conn->close();
+mysqli_close($conn);
 
 ?>
 
