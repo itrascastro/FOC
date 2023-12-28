@@ -24,9 +24,9 @@ $result = mysqli_query($conn, $query);
             if ($result) {
                 // Recorrer los resultados y mostrar los productos
                 while ($row = mysqli_fetch_assoc($result)) {
-                    echo "ID: " . $row['id'] . "<br>";
-                    echo "Nombre: " . $row['nombre'] . "<br>";
-                    echo "Precio: " . $row['precio'] . "<br>";
+                    echo "<strong>ID</strong>: " . $row['id'] . "<br>";
+                    echo "<strong>Nombre</strong>: " . $row['nombre'] . "<br>";
+                    echo "<strong>Precio</strong>: " . $row['precio'] . "<br>";
                     echo "<br><br>";
                 }
             } else {
