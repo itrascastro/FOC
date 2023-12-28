@@ -27,7 +27,7 @@ $result = mysqli_query($conn, $query);
                     echo "ID: " . $row['id'] . "<br>";
                     echo "Nombre: " . $row['nombre'] . "<br>";
                     echo "Precio: " . $row['precio'] . "<br>";
-                    echo "<br>";
+                    echo "<br><br>";
                 }
             } else {
                 echo "Error al obtener los productos: " . mysqli_error($conexion);

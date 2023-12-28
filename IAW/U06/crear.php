@@ -12,7 +12,7 @@ $sql = "CREATE TABLE IF NOT EXISTS productos2 (
 if (mysqli_query($conn, $sql) === TRUE) {
     $mensaje = "Tabla 'productos' creada correctamente";
 } else {
-    $mensaje = "Error al crear la tabla: " . $conn->error;
+    $mensaje = "Error al crear la tabla: " . mysqli_error($conn);
 }
 
 mysqli_close($conn);

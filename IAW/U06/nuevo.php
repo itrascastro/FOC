@@ -26,7 +26,7 @@ if (isset($_POST['nombre']) && isset($_POST['precio'])) {
 
     // Cerrar la conexión
     mysqli_close($conn);
-} else {
+} else { // No viene del formulario
     header("Location: nuevo.html");
 }
 ?>
@@ -41,7 +41,10 @@ if (isset($_POST['nombre']) && isset($_POST['precio'])) {
                     echo $mensaje;
                 ?>
 
-                <a href="listar.php">Listar productos</a>
+                <div>
+                    <a href="listar.php">Listar productos</a><br>
+                    <a href="nuevo.html">Insertar otro producto</a>
+                </div>
     
             </div>
     </body>
