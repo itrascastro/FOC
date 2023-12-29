@@ -39,6 +39,10 @@ $result = mysqli_query($conn, $query);
 
         </div>
 
+        <div>
+            <a href="index.html">Volver a Inicio</a><br>
+        </div>
+
     </body>
 </html>
 
